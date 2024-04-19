@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movilidad Urbana en Bicicleta</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    .text-container {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      /*float: right;*/
+      max-width: 600px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Center carousel content */
+    .carousel-item iframe {
+      display: block;
+      margin: 0 auto;
+    }
+    .carousel-inner {
+      background-color: #333; /* Light grey */
+    }
+
+    .video-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      color: #fff; /* White text color */
+      padding: 10px;
+      margin: 0;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #f8f9fa; /* Lighter grey background */
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="https://labexp.github.io"><img src="https://labexp.github.io/media/logo.png" alt="Website Logo"
+        height="60px"></a>
+      <a class="navbar-brand" href="#">Movilidad</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#videos-divulgación">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mapa-riesgo">Mapa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#esquema-mapeo">Esquema</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#brochures">Brochures</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+
+    <h2>Fomento del uso de tecnologías participativas comunitarias para promover la reducción del riesgo en la movilidad ciclística en el cantón de Alajuela</h2>
+
+    <section id="acerca-de">
+      <p>En este proyecto trabajamos con el colectivo Alajuela en Cleta y la comunidad extendida de ciclistas urbanos que circulan en el distrito primero del cantón central de Alajuela, para en conjunto promover la reducción del riesgo durante los desplazamientos en bicicleta. </p>
+      <p>A partir de una actividad de diagnóstico realizada en conjunto con la comunidad, se identificaron riesgos que incluyen: accidentes al compartir la vía con automotores, malestares o padecimientos por exposición a las condiciones del medio (por ejemplo insolación, agotamiento, entre otros), y robo o hurto del vehículo u otras pertenencias.</p>
+      <p>Se trabajó en conjunto con la comunidad en la construcción y divulgación de información acerca de las características y uso de las vías para apoyar la toma de decisiones por parte de ciclistas, choferes automotores y autoridades municipales con el fin de reducir los riesgos anteriormente mencionados.</p>
+    </section>
+
+    <section id="video-presentación">
+      <div class="video-container">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dqcZ66r-6yk?si=DTzy4jN48xK0KiYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class="text-muted">Presentación del proyecto</p>
+      </div>
+    </section>
+
+    <section id="resultados">
+      <h3>Resultados</h3>
+      <p>El desarrollo de este proyecto incluyó el diseño y puesta en marcha, en conjunto entre extensionistas (profesores y estudiantes) y miembros de la comunidad, de una metodología para la generación de información sobre una movilidad urbana menos riesgosa en bicicleta en el cantón de Alajuela.</p>
+      <p>Con base en experiencias previas, los extensionistas aportaron su conocimiento sobre cartografía social, herramientas tecnológicas de software libre, y metodologías participativas para la recolección de datos geoespaciales útiles en la toma de decisiones. </p>
+      <p>Los miembros de la comunidad extendida del colectivo Alajuela en Cleta aportaron la información requerida según el planteamiento del problema, a partir de su movilidad cotidiana. El núcleo coordinador de Alajuela en Cleta apoyó con divulgación a través de su plataforma y coordinación de actividades. </p>
+    </section>
+
+    <section id="videos-divulgación">
+      <h4>Videos de divulgación</h4>
+      <div id="videoCarousel" class="carousel slide"  data-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div>
+              <p class="video-caption">1. Qué, porqué y cómo mapear</p>
+              <iframe src="https://drive.google.com/file/d/1Gw2BJA-NxY-qpjFBywDIa8c5YpF1t56M/preview" width="560" height="315" allow="autoplay"></iframe>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <p class="video-caption">2. Mapeando para la libertad</p>
+              <iframe src="https://drive.google.com/file/d/1bSjNUcv-pEXk9K9C8hkB6RmzhBpebHiG/preview" width="560" height="315" allow="autoplay"></iframe>
+            </div>
+          </div>
+          <!-- Add more carousel items with embedded videos as needed -->
+        </div>
+        <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <p></p>
+    </section>
+
+    <section id="mapa-riesgo">
+      <h4>Mapa de riesgo</h4>
+      <button class="text-container btn btn-primary mt-3" onclick="goTo('mapa-riesgo-movilidad')">Ir al Mapa de Riesgo</button>
+      <iframe id="mapa-riesgo-movilidad" width="100%" height="600px" src="https://labexp.github.io/mapa-riesgo-movilidad/" frameborder="1"></iframe>
+    </section>
+
+    <section id="esquema-mapeo">
+      <h4>Esquema de mapeo</h4>
+      <p>Diseño colaborativo de una lista de elementos de infraestructura relevantes para la movilidad ciclística, con los detalles técnicos que permiten incorporarlos al mapa libre de OpenStreetMap.</p>
+      <button class="text-container btn btn-primary mt-3" onclick="goTo('wiki-esquema-mapeo')">Ir al Esquema de Mapeo</button>
+      <iframe id="wiki-esquema-mapeo" width="100%" height="600px" src="https://wiki.openstreetmap.org/wiki/ES:LabExp#Movilidad_Urbana_en_Bicicleta" frameborder="1"></iframe>
+    </section>
+
+    <section id="brochures">
+      <h4>Brochures</h4>
+      <p>Mapeando Infraestructura Ciclística</p>
+      <iframe id="brochure-mapeando" width="100%" height="600px" src="https://drive.google.com/file/d/1EoXjjqLh-n1qMfa9HYrz4xUfcJ1zdZ4W/preview"></iframe>
+      <p>Elementos a Mapear </p>
+      <iframe id="brochure-mapeando" width="100%" height="600px" src="https://drive.google.com/file/d/1sVE41h5gYmLSxO3sXRjuByWVrukDUCpP/preview"></iframe>
+      <p>Guía de Instalación para OSMTracker</p>
+      <iframe id="brochure-mapeando" width="100%" height="600px" src="https://drive.google.com/file/d/1AAHXDGu09qvi1_yQJ70bFL4wRxMWrH1_/preview"></iframe>
+    </section>
+
+  </div>
+
+  </div>
+
+  <div style="height: 100px;"></div>
+
+  <footer>
+    <p>&#x1f12f; 2024 Laboratorio Experimental</p>
+  </footer>
+
+
+  <script>
+    function goTo(id) {
+      var iframeSrc = document.getElementById(id).src;
+      window.open(iframeSrc, '_blank');
+    }
+  </script>  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
